@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <style>
+        *{
+            margin: 0em;
+            padding: 0em;
+        
+        }
+        .container{
+            margin-left: 41%;
+            position: absolute;
+        }
+        div label{
+            font-size: 0.9em;
+            text-align: center;
+            position: relative;
+            float: left;
+        }
+        /* div input{
+            position: absolute;
+            float: right; */
+        }
+    </style>
+</head>
+<body style="background-color: rgb(181, 223, 223);" >
+    <h1 style="padding: 3px; margin: 0px; background-color: rgb(209, 166, 110); border: 3px solid rgb(236, 172, 52); border-radius: 9px; font-size: 1em; font-style: italic; text-shadow: 2px 2px 2px blueviolet; color: white; text-align:center;" >Feedback Page</h1>
+    <center style="margin-top: 40px;">
+          <form action="">
+                 <div class="container">
+              <label for="username"><pre>First Name       </pre></label>
+              <input type="text" placeholder="Enter Your Name " name="name"><br> <br>
+              <label for="surname"><pre>Surname          </pre>     </label>
+              <input type="text" placeholder="Enter Your Surname"><br><br>
+              <label for="mobilen0"><pre>Mobile no.       </pre>  </label>
+              <input type="number" placeholder="Enter Your Mobile No."><br><br>
+              <label for="email"><pre>Email            </pre> </label>
+              <input type="email" placeholder="Enter Your Email"><br><br>
+              <label for="selection"><pre>Post        </pre> </label>
+              <select name="post"><option value="none">Select Your Post</option> <option value="student">Student</option><option value="teacher">Teacher</option><option value="professor">Professor</option><option value="businessman">Businessman</option><option value="other">Other</option></select><br><br>
+              <label for="feedback"><pre>Feedback                </pre></label>
+              <textarea name="feedbk" cols="30" rows="5"></textarea><br>
+                 <button onclick="{{alert('Your Feedback Is Successefully Submited')}}" style="opacity: -4px; background-color: rgb(67, 67, 167); border-radius: 5px; color: white; size: 50px;">Submit</button>
+            </div>
+          </form>
+    </center>
+</body>
+</html>
